@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### Live Application 
+## Live Application 
 [Live app](https://main--legendary-vacherin-8766f0.netlify.app/)
 
 ### `npm start`
