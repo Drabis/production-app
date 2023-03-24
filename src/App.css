@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #8758ff;
+  background: #58d0ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,20 +63,24 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
-  color: #fff;
+  background: #fcfafe;
+  color: rgb(30, 22, 22);
   padding: 0.75rem 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
   cursor: pointer;
 }
+.faPenToSquare{
+  color: #1414a1;
+}
 
 .fa-trash {
   margin-left: 0.75rem;
+  color: red;
 }
 
 .completed {
-  color: #c5aeff;
+  /* color: #c5aeff; */
   text-decoration: line-through;
 }
  

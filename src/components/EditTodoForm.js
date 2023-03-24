@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 
-export default function  EditTodoForm ({ editTodo, task }) {
-  const [value, setValue] = useState("");
+export default function EditTodoForm({ editTodo, task }) {
+    const [value, setValue] = useState( task.content );
 
   const handleSubmit = (e) => {
-    // prevent default action
     e.preventDefault();
-    // edit todo
     editTodo(value, task.id);
   };
+
   return (
     <form onSubmit={handleSubmit} className="TodoForm">
       <input
@@ -19,8 +18,8 @@ export default function  EditTodoForm ({ editTodo, task }) {
         placeholder="Update task"
       />
       <button type="submit" className="todo-btn">
-        Add Task
+        Update Task
       </button>
     </form>
   );
-};
+}

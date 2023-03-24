@@ -7,18 +7,18 @@ uuidv4();
 
 export default function TodoWrapper() {
   const [todos, setTodos] = useState([]);
-
+// add a single todo
   const addTodo = (todo) => {
     setTodos([
       ...todos,
       { id: uuidv4(), task: todo, completed: false, isEditing: false },
     ]);
   };
-
+// Delete a todo
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
-
+// mark todo complete
   const toggleComplete = (id) => {
     setTodos(
       todos.map((todo) =>
@@ -47,7 +47,7 @@ export default function TodoWrapper() {
     <div className="TodoWrapper">
       <h1>What do you want to get done?</h1>
       <TodoForm addTodo={addTodo} />
-      {/* display todos */}
+      {/* display todos list */}
       {todos.map((todo, index) =>
         todo.isEditing ? (
           <EditTodoForm editTodo={editTask} task={todo} />
